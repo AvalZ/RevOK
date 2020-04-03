@@ -32,8 +32,6 @@ Private military company ConSec recruits "scanners" – super-powered individual
 However, when one of ConSec's scanners demonstrates his powers at a marketing event, the volunteer – Darryl Revok – turns out to be a more powerful scanner, who causes the ConSec scanner's head to explode.
 
 [Here](https://www.youtube.com/watch?v=qnp1jfLhtck) you can find the full scene.
-**SPOILER ALERT**: head explodes at the end.
-
 
 ## References
 
