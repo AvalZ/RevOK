@@ -29,7 +29,7 @@ __________            ________   ____  __.
 @click.pass_context
 def taint(ctx, packets_log, scanner_report, token_format):
     """
-    Get tainted paths between log and report
+    Get tainted paths between log and report.
     """
     token_format_regex = re.compile(r'[\w]{8}-[\w]{4}-[\w]{4}-[\w]{4}-[\w]{12}', re.I)
     # token_format_regex = re.compile('[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]-{4}[0-9a-f]{4}-[0-9a-f]{12}\Z', re.I)

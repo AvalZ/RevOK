@@ -16,6 +16,9 @@ from loguru import logger
 @click.option('--port', default=80)
 # TODO: @click.option('--mode', default='all')
 def stub(template, substitutions, port, log_file):
+    """
+    Run a stub that serves tracking responses.
+    """
     # Create socket
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('0.0.0.0', port))

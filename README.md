@@ -6,7 +6,13 @@
 
 `python --help`
 
-### Token deployment
+### 
+
+The core of RevOK is
+
+
+
+### Automatic token deployment
 
 You can launch the *stub* component like this:
 
@@ -14,13 +20,53 @@ You can launch the *stub* component like this:
 
 You can also define a specific port using the `--port` switch, for example
 
-`python cli.py server --port 3000`
+```
+:~$ python cli.py stub --help
+
+Usage: cli.py stub [OPTIONS] [TEMPLATE] [SUBSTITUTIONS]
+
+    Run a stub that serves tracking responses.
+
+Options:
+    --log-file TEXT
+    --port INTEGER
+    --help           Show this message and exit.
+```
 
 
+### Enumerate tainted flows
 
-### 
+```
+:~$ python cli.py taint --help
 
-### 
+Usage: cli.py taint [OPTIONS] PACKETS_LOG SCANNER_REPORT
+
+    Get tainted paths between log and report.
+
+Options:
+    --token-format TEXT
+    --help               Show this message and exit.
+
+```
+
+
+### Fetch attack template
+
+```
+:~$ python cli.py template --help
+
+Usage: cli.py template [OPTIONS] PACKETS_LOG TOKEN
+
+    Get a prebuilt template from a tainted token. The template can be used
+    from the stub component.
+    
+    WARNING! Use the same placeholder used by the stub.
+
+Options:
+    -p, --placeholder TEXT
+    --help                  Show this message and exit.
+```
+
 
 ## Why RevOK?
 
