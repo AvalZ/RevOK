@@ -2,7 +2,7 @@ import click
 import re
 from loguru import logger
 from utils import get_template_from_token, get_tainted_packets, get_tainted_packet, get_clean_source_packets
-from server import server
+from stub import stub
 
 from drivers import MockDriver
 
@@ -100,9 +100,9 @@ def taint(ctx, packets_log, scanner_report, token_format):
 def template(ctx, packets_log, token, placeholder):
     """
     Get a prebuilt template from a tainted token.
-    The template can be used from the server component.
+    The template can be used from the stub component.
 
-    WARNING! Use the same placeholder used in the server.
+    WARNING! Use the same placeholder used by the stub.
     """
 
     source_packets = get_clean_source_packets(packets_log)
@@ -111,7 +111,7 @@ def template(ctx, packets_log, token, placeholder):
 
     click.echo(template)
 
-cli.add_command(server)
+cli.add_command(stub)
     
 if __name__ == '__main__':
     cli()

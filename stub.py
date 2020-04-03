@@ -15,7 +15,7 @@ from loguru import logger
 @click.option('--log-file', required=False, multiple=True)
 @click.option('--port', default=80)
 # TODO: @click.option('--mode', default='all')
-def server(template, substitutions, port, log_file):
+def stub(template, substitutions, port, log_file):
     # Create socket
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('0.0.0.0', port))
@@ -92,4 +92,4 @@ def server(template, substitutions, port, log_file):
 
 if __name__ == "__main__":
     # §a§ §b§ §c§
-    server()
+    stub()
