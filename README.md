@@ -8,11 +8,18 @@
 
 ### 
 
-The core of RevOK is
+The core of RevOK is the *stub* component.
+It listens for incoming requests and sends attack responses.
 
+Responses are crafted from a *template* response and a *substitution list* containing attack payloads.
+Example usage:
+
+`python cli.py stub example.template example.substitutions`
 
 
 ### Automatic token deployment
+
+
 
 You can launch the *stub* component like this:
 
@@ -33,7 +40,6 @@ Options:
     --help           Show this message and exit.
 ```
 
-
 ### Enumerate tainted flows
 
 ```
@@ -48,7 +54,6 @@ Options:
     --help               Show this message and exit.
 
 ```
-
 
 ### Fetch attack template
 
@@ -66,7 +71,6 @@ Options:
     -p, --placeholder TEXT
     --help                  Show this message and exit.
 ```
-
 
 ## Why RevOK?
 
