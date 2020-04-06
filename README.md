@@ -1,12 +1,10 @@
 # RevOK
 
-
+An HTTP *response* fuzzer.
 
 ## Getting started 
 
 `python --help`
-
-### 
 
 The core of RevOK is the *stub* component.
 It listens for incoming requests and sends attack responses.
@@ -17,15 +15,11 @@ Example usage:
 `python cli.py stub example.template example.substitutions`
 
 
-### Automatic token deployment
+You can also define a specific port using the `--port` switch, for example:
 
+`python cli.py stub example.template example.substitutions --port 3000`
 
-
-You can launch the *stub* component like this:
-
-`python cli.py server`
-
-You can also define a specific port using the `--port` switch, for example
+Additional options are available from the `--help` switch.
 
 ```
 :~$ python cli.py stub --help
@@ -39,6 +33,21 @@ Options:
     --port INTEGER
     --help           Show this message and exit.
 ```
+
+### Automatic token deployment
+
+"All responses are equal, but some responses are more equal than others"
+
+Responses are not all parsed in the same way.
+Some parsers accept that the *Status message* is something different from "OK" or "Moved permanently",
+others do not and discard the response.
+
+To make testing easier, the stub component has a *tracking mode*, where it generates responses based on
+a [*probabilistic context-free grammar*](fuzzer/probabilistichttpfuzzer.py)
+
+You can launch the tracking mode of the stub component without defining the template and substitution list:
+
+`python cli.py server`
 
 ### Enumerate tainted flows
 
