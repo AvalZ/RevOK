@@ -2,9 +2,7 @@
 
 An HTTP *response* fuzzer.
 
-## Getting started 
-
-`python --help`
+## Getting started
 
 The core of RevOK is the *stub* component.
 It listens for incoming requests and sends attack responses.
