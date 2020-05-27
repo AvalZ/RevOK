@@ -83,7 +83,7 @@ Options:
 
 In short, RevOK makes scanners explode.
 
-This is somewhat of an obscure reference from the 1981 movie *Scanners*.
+This is somewhat of an obscure reference from the 1981 movie *Scanners* [3].
 
 Private military company ConSec recruits "scanners" – super-powered individuals capable of telepathy and psychokinesis – and uses them in service of the company.
 However, when one of ConSec's scanners demonstrates his powers at a marketing event, the volunteer – Darryl Revok – turns out to be a more powerful scanner, who causes the ConSec scanner's head to explode.
@@ -92,6 +92,6 @@ However, when one of ConSec's scanners demonstrates his powers at a marketing ev
 
 ## References
 
-- [Attacking the attackers](https://avalz.it/research/metasploit-pro-xss-to-rce/)
-- [Metasploit Pro Release Notes for CVE-2020-7354 and CVE-2020-7355](https://help.rapid7.com/metasploit/release-notes/archive/2020/05/#20200514)
-- [Scanners (1981)](https://www.imdb.com/title/tt0081455/)
+1. [Attacking the attackers](https://avalz.it/research/metasploit-pro-xss-to-rce/)
+2. [Metasploit Pro Release Notes for CVE-2020-7354 and CVE-2020-7355](https://help.rapid7.com/metasploit/release-notes/archive/2020/05/#20200514)
+3. [Scanners (1981)](https://www.imdb.com/title/tt0081455/)
