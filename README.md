@@ -92,5 +92,6 @@ However, when one of ConSec's scanners demonstrates his powers at a marketing ev
 
 ## References
 
-- [Metasploit Vulnerability (TBD)]()
+- [Attacking the attackers](https://avalz.it/research/metasploit-pro-xss-to-rce/)
+- [Metasploit Pro Release Notes for CVE-2020-7354 and CVE-2020-7355](https://help.rapid7.com/metasploit/release-notes/archive/2020/05/#20200514)
 - [Scanners (1981)](https://www.imdb.com/title/tt0081455/)
