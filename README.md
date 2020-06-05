@@ -10,12 +10,15 @@ It listens for incoming requests and sends attack responses.
 Responses are crafted from a *template* response and a *substitution list* containing attack payloads.
 Example usage:
 
-`python cli.py stub example.template example.substitutions`
-
+```
+python cli.py stub example.template example.substitutions
+```
 
 You can also define a specific port using the `--port` switch, for example:
 
-`python cli.py stub example.template example.substitutions --port 3000`
+```
+python cli.py stub example.template example.substitutions --port 3000
+```
 
 Additional options are available from the `--help` switch.
 
@@ -45,7 +48,9 @@ a [*probabilistic context-free grammar*](fuzzer/probabilistichttpfuzzer.py).
 
 You can launch the tracking mode of the stub component without defining the template and substitution list:
 
-`python cli.py server`
+```
+python cli.py server
+```
 
 ### Enumerate tainted flows
 
