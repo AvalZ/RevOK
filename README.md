@@ -41,7 +41,7 @@ Some parsers accept that the *Status message* is something different from "OK" o
 others do not and discard the response.
 
 To make testing easier, the stub component has a *tracking mode*, where it generates responses based on
-a [*probabilistic context-free grammar*](fuzzer/probabilistichttpfuzzer.py)
+a [*probabilistic context-free grammar*](fuzzer/probabilistichttpfuzzer.py).
 
 You can launch the tracking mode of the stub component without defining the template and substitution list:
 
