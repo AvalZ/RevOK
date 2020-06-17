@@ -1,7 +1,5 @@
 # RevOK
 
-Reversed Overtaking Kit - An HTTP Response fuzzer to test security scanners.
-
 We see the targets of our scan as passive entities, and this leads to underestimating the risk of performing a scan. However, the tools we use to scan are not immune to vulnerabilities.
 Testing these bugs is often hard since they require a dedicated testing infrastructure: RevOK supports analysts by simulating a malicious target and by tracking data in the security scanner.
 
