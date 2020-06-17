@@ -5,6 +5,8 @@ Reversed Overtaking Kit - An HTTP Response fuzzer to test security scanners.
 We see the targets of our scan as passive entities, and this leads to underestimating the risk of performing a scan. However, the tools we use to scan are not immune to vulnerabilities.
 Testing these bugs is often hard since they require a dedicated testing infrastructure: RevOK supports analysts by simulating a malicious target and by tracking data in the security scanner.
 
+![RevOK flow](revok-flow.png)
+
 While the focus is on security scanners, RevOK can be used to test any software that takes (attacker-controlled) third-party data and displays it to a user (e.g., server-side REST API calls).
 
 RevOK helped us to find two [XSS to RCE bugs in Metasploit Pro](https://avalz.it/research/metasploit-pro-xss-to-rce/)[2] ([CVE-2020-7354](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-7354) and [CVE-2020-7355](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-7355)), as well as many other vulnerabilities.
