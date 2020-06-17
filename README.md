@@ -7,12 +7,32 @@ Reversed Overtaking Kit -- An HTTP response fuzzer.
 The core of RevOK is the *stub* component.
 It listens for incoming requests and sends attack responses.
 
-Responses are crafted from a *template* response and a *substitution list* containing attack payloads.
-Example usage:
+Responses are crafted from a *template file* and a *substitution list* containing attack payloads.
+```
+python cli.py stub TEMPLATE_FILE SUBSTITUTION_LIST
+```
 
+This is an example of a template file:
+```
+HTTP/1.1 200 OK
+Server: $a
+
+<html>
+<head><title>Title</title></head>
+<body>
+    <h1>My page</h1>
+</body>
+</html>
+```
+
+For each incoming request, the **stub** substitutes the placeholder **$a** with a new element of the substitution list.
+You can also define custom placeholders using the `--placeholder` (`-p`) switch.
+
+Example usage:
 ```
 python cli.py stub example.template example.substitutions
 ```
+You can find `example.template` and `example.substitutions` in this repo.
 
 You can also define a specific port using the `--port` switch, for example:
 
