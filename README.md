@@ -1,6 +1,6 @@
 # RevOK
 
-An HTTP *response* fuzzer.
+Reversed Overtaking Kit -- An HTTP response fuzzer.
 
 ## Getting started
 
