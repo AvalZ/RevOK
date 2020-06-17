@@ -1,6 +1,23 @@
 # RevOK
 
-Reversed Overtaking Kit -- An HTTP response fuzzer.
+Reversed Overtaking Kit - An HTTP Response fuzzer to test security scanners.
+
+We see the targets of our scan as passive entities, and this leads to underestimating the risk of performing a scan. However, the tools we use to scan are not immune to vulnerabilities.
+Testing these bugs is often hard since they require a dedicated testing infrastructure: RevOK supports analysts by simulating a malicious target and by tracking data in the security scanner.
+
+While the focus is on security scanners, RevOK can be used to test any software that takes (attacker-controlled) third-party data and displays it to a user (e.g., server-side REST API calls).
+
+RevOK helped us to find two [XSS to RCE bugs in Metasploit Pro](https://avalz.it/research/metasploit-pro-xss-to-rce/)[2] ([CVE-2020-7354](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-7354) and [CVE-2020-7355](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-7355)), as well as many other vulnerabilities.
+We described this technique in our paper "Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners" [3], accepted at [RAID 2020](https://raid2020.org/).
+
+- Descrizione tool
+
+    - Focus su testing security scanners
+    - Testing di dati ritornati (e.g., API server-side)
+        - Assumed sane, not always the case
+- Case study (metasploit + link post)
+- Paper RAID 2020 (preprint)
+
 
 ## Getting started
 
@@ -25,14 +42,12 @@ Server: $a
 </html>
 ```
 
-For each incoming request, the **stub** substitutes the placeholder **$a** with a new element of the substitution list.
-You can also define custom placeholders using the `--placeholder` (`-p`) switch.
-
-Example usage:
+For each incoming request, the **stub** substitutes the placeholder (`$a` by default) with a new element of the substitution list.
+You can also define custom placeholders using the `--placeholder` (`-p`) switch. Example usage:
 ```
-python cli.py stub example.template example.substitutions
+python cli.py stub example.template example.substitutions -p "$a"
 ```
-You can find `example.template` and `example.substitutions` in this repo.
+You can find `example.template` and `example.substitutions` in this repo. WARNING: **stub** will substitute ANY occurrence of the defined placeholder; choose one that does not occur in any other part of the template.
 
 You can also define a specific port using the `--port` switch, for example:
 
@@ -108,7 +123,7 @@ Options:
 
 In short, RevOK makes scanners explode.
 
-This is somewhat of an obscure reference from the 1981 movie *Scanners* [3].
+This is somewhat of an obscure reference from the 1981 movie *Scanners* [4].
 
 Private military company ConSec recruits "scanners" – super-powered individuals capable of telepathy and psychokinesis – and uses them in service of the company.
 However, when one of ConSec's scanners demonstrates his powers at a marketing event, the volunteer – Darryl Revok – turns out to be a more powerful scanner, who causes the ConSec scanner's head to explode.
@@ -119,4 +134,5 @@ However, when one of ConSec's scanners demonstrates his powers at a marketing ev
 
 1. [Attacking the attackers](https://avalz.it/research/metasploit-pro-xss-to-rce/)
 2. [Metasploit Pro Release Notes for CVE-2020-7354 and CVE-2020-7355](https://help.rapid7.com/metasploit/release-notes/archive/2020/05/#20200514)
-3. [Scanners (1981)](https://www.imdb.com/title/tt0081455/)
+3. 
+4. [Scanners (1981)](https://www.imdb.com/title/tt0081455/)
