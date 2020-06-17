@@ -4,7 +4,7 @@ Reversed Overtaking Kit -- An HTTP response fuzzer.
 
 ## Getting started
 
-The core of RevOK is the *stub* component.
+The core of RevOK is the **stub** component.
 It listens for incoming requests and sends attack responses.
 
 Responses are crafted from a *template file* and a *substitution list* containing attack payloads.
