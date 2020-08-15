@@ -6,6 +6,7 @@ import time
 
 from fuzzer.probabilistichttpfuzzer import prob_http_fuzzer
 from loguru import logger
+from xeger import Xeger
 
 
 
@@ -14,8 +15,8 @@ from loguru import logger
 @click.argument('substitutions', type=click.File('rb'), required=False)
 @click.option('--log-file', required=False, multiple=True)
 @click.option('--port', default=80)
-# TODO: @click.option('--mode', default='all')
-def stub(template, substitutions, port, log_file):
+@click.option('--mode', type=click.Choice(['grammar', 'nmap']), default='grammar')
+def stub(template, substitutions, port, log_file, mode):
     """
     Run a stub that serves tracking responses.
     """
@@ -67,7 +68,17 @@ def stub(template, substitutions, port, log_file):
 
     else:
         while True:
-            current_payload = prob_http_fuzzer()
+            if mode == 'grammar':
+                current_payload = prob_http_fuzzer()
+            elif mode == 'nmap':
+                # TODO: choose portocol
+                regexes = open('protocols/{}'.format(protocol), 'r').readlines()
+                chosen_regex = random.choice(regexes)
+
+                x = Xeger()
+                current_payload = x.xeger(chosen_regex)
+
+            # Check if click catches the error
 
             current_payload = bytes(current_payload, encoding='utf-8')
 

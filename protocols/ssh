@@ -1,0 +1,237 @@
+^SSH-([\d.]+)-(?=[\w._-]{5,15}\r?\n$).*(?:[a-z](?:[A-Z]\d|\d[A-Z])|[A-Z](?:[a-z]\d|\d[a-z])|\d(?:[a-z][A-Z]|[A-Z][a-z]))
+^SSH-([\d.]+)-OpenSSH[_-]([\S ]+)
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) FreeBSD-openssh-portable-(?:base-|amd64-)?[\w.,]+\r?\n
+^Access to service sshd from [-\w_.]+@[-\w_.]+ has been denied\.\r\n
+^Could not load host key\. Closing connection\.\.\.$
+^Could not load hosy key\. Closing connection\.\.\.$
+^SSH-([\d.]+)-(?=[\w._-]{5,15}\r?\n$)(?!.*[sS][sS][hH]).*[b-df-hj-np-tv-xzB-DF-HJ-NP-TV-XZ]{5}
+^SSH-([\d.]+)-([\d.]+) F-SECURE SSH.*\r?\n
+^SSH-([\d.]+)-([\d.]+) F-Secure SSH Windows NT Server\r?\n
+^SSH-([\d.]+)-([\d.]+) Radware\r?\n$
+^SSH-([\d.]+)-([\d.]+) SSH Secure Shell Tru64 UNIX\r?\n
+^SSH-([\d.]+)-([\d.]+) dss F-SECURE SSH\r?\n
+^SSH-([\d.]+)-([\w.-]+)_sshlib GlobalSCAPE\r\n
+^SSH-([\d.]+)-([\w.-]+)_sshlib Globalscape\r\n
+^SSH-([\d.]+)-([\w.]+) VShell\r?\n
+^SSH-([\d.]+)-([\w.]+) \(beta\) VShell\r?\n
+^SSH-([\d.]+)-([\w.]+)rad\r?\n
+^SSH-([\d.]+)-([\w._-]+) FlowSsh: Bitvise SSH Server \(WinSSHD\) ([\w._-]+): free only for personal non-commercial use\r\n
+^SSH-([\d.]+)-([\w._-]+) FlowSsh: Bitvise SSH Server \(WinSSHD\) ([\w._-]+)\r\n
+^SSH-([\d.]+)-([\w._-]+) FlowSsh: Bitvise SSH Server \(WinSSHD\) \r\n
+^SSH-([\d.]+)-([\w._-]+) FlowSsh: WinSSHD ([\w._-]+): free only for personal non-commercial use\r\n
+^SSH-([\d.]+)-([\w._-]+) FlowSsh: WinSSHD ([\w._-]+)\r\n
+^SSH-([\d.]+)-([\w._-]+) FlowSsh: WinSSHD: free only for personal non-commercial use\r\n
+^SSH-([\d.]+)-([\w._-]+) sshlib: ([78]\.\d+\.\d+\.\d+)\r\n
+^SSH-([\d.]+)-([\w._-]+) sshlib: EdmzSshDaemon ([\w._-]+)\r\n
+^SSH-([\d.]+)-([\w._-]+) sshlib: GlobalScape\r?\n
+^SSH-([\d.]+)-([\w._-]+) sshlib: sshlibSrSshServer ([\w._-]+)\r\n
+^SSH-([\d.]+)-(\d+\.\d+\.[-.\w]+)
+^SSH-([\d.]+)-(\d+\.\d+\.\d+) SSH Secure Shell
+^SSH-([\d.]+)-(\d[-.\w]+) sshlib: WinSSHD (\d[-.\w]+)\r?\n
+^SSH-([\d.]+)-(\d[-.\w]+) sshlib: WinSSHD\r?\n
+^SSH-([\d.]+)--\n
+^SSH-([\d.]+)-0 Tasman Networks Inc\.\r?\n
+^SSH-([\d.]+)-1\.00\r\n$
+^SSH-([\d.]+)-1\r\n
+^SSH-([\d.]+)-3Com OS-([\w._-]+ Release \w+)\n
+^SSH-([\d.]+)-3Com OS-3Com OS V([\w._-]+)\n
+^SSH-([\d.]+)-AOS_SSH\r?\n
+^SSH-([\d.]+)-Adtran_([\w._-]+)\r\n
+^SSH-([\d.]+)-ArrayOS\n
+^SSH-([\d.]+)-AsyncSSH_(\d[\w.-]+)\r\n
+^SSH-([\d.]+)-AtiSSH_([\w._-]+)\r\n
+^SSH-([\d.]+)-AudioCodes\n
+^SSH-([\d.]+)-Axway\.Gateway\r\n
+^SSH-([\d.]+)-BlueArcSSH_([\d.]+)\r?\n
+^SSH-([\d.]+)-BoKS_SSH_([\d.]+)\r\n
+^SSH-([\d.]+)-CISCO_WLC\r\n
+^SSH-([\d.]+)-CPS_SSH_ID_([\d.]+)\r\n
+^SSH-([\d.]+)-CerberusFTPServer_([\w._-]+) FIPS\r\n
+^SSH-([\d.]+)-CerberusFTPServer_([\w._-]+)\r\n
+^SSH-([\d.]+)-CompleteFTP[-_]([\d.]+)\r\n
+^SSH-([\d.]+)-Comware-([\d.]+)\r?\n
+^SSH-([\d.]+)-ConfD-([\w._-]+)\r\n
+^SSH-([\d.]+)-CoreFTP-([\w._-]+)\r?\n
+^SSH-([\d.]+)-CrushFTPSSHD\r\n
+^SSH-([\d.]+)-CrushFTPSSHD_5\r\n
+^SSH-([\d.]+)-DLink Corp\. SSH server ver ([\d.]+)\r?\n
+^SSH-([\d.]+)-DOPRA-([\w._-]+)\n
+^SSH-([\d.]+)-Data ONTAP SSH ([\w._-]+)\n
+^SSH-([\d.]+)-DigiSSH_([\d.]+)\r?\n
+^SSH-([\d.]+)-DraySSH_([\w._-]+)\n\n\rNo connection is available now\. Try again later!$
+^SSH-([\d.]+)-DraySSH_([\w._-]+)\n
+^SSH-([\d.]+)-EchoSystem_Server_([\w._-]+)\r\n
+^SSH-([\d.]+)-FileCOPA\r\n
+^SSH-([\d.]+)-FortiSSH_([\d.]+)\r?\n
+^SSH-([\d.]+)-Foxit-WAC-Server-([\d.]+ Build \d+)\n
+^SSH-([\d.]+)-FreSSH\.([\d.]+)\r?\n
+^SSH-([\d.]+)-GerritCodeReview_([\w._-]+) \(SSHD-CORE-([\w._-]+)\)\r\n
+^SSH-([\d.]+)-Gitblit_v([\d.]+) \(SSHD-CORE-([\d.]+)-NIO2\)\r\n
+^SSH-([\d.]+)-GoAnywhere([\d.]+)\r\n
+^SSH-([\d.]+)-HUAWEI-([\d.]+)\r?\n
+^SSH-([\d.]+)-HUAWEI-UMG([\d.]+)\r?\n
+^SSH-([\d.]+)-HUAWEI-VRP([\d.]+)\r?\n
+^SSH-([\d.]+)-IFT SSH server BUILD_VER\n
+^SSH-([\d.]+)-IPSSH-([\d.]+)\r?\n
+^SSH-([\d.]+)-Ingrian_SSH\r?\n
+^SSH-([\d.]+)-LXSSH_([\d.]+)\n
+^SSH-([\d.]+)-MS_(\d+\.\d\d\d)\r\n
+^SSH-([\d.]+)-Maverick_SSHD\r\n
+^SSH-([\d.]+)-NA_([\d.]+)\r\n
+^SSH-([\d.]+)-NOS-SSH_([\d.]+)\r?\n
+^SSH-([\d.]+)-Nand([\w._-]+)\r\n
+^SSH-([\d.]+)-NetScreen\r?\n
+^SSH-([\d.]+)-Neteyes-C-Series_([\d.]+)\r?\n
+^SSH-([\d.]+)-Nortel\r?\n
+^SSH-([\d.]+)-OneSSH_([\w.]+)\n
+^SSH-([\d.]+)-OpenSSH[_-]([\w.]+)\s*\r?\n
+^SSH-([\d.]+)-OpenSSH\r?\n$
+^SSH-([\d.]+)-OpenSSH_([\d.]+) in DesktopAuthority ([\d.]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w.]+) DragonFly-
+^SSH-([\d.]+)-OpenSSH_([\w.]+)[-_]hpn(\w+) DragonFly-
+^SSH-([\d.]+)-OpenSSH_([\w.]+)\r?\n.*aes256
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) Debian-(\S*maemo\S*)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) FreeBSD localisations (\d+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) FreeBSD-([\d]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) FreeBSD-openssh-gssapi-
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) FreeBSD-openssh-portable-overwrite-base
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) FreeBSD\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) NCSA_GSSAPI_20040818 KRB5\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) NetBSD_Secure_Shell-([\w._+-]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) OVH-rescue\r\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) PKIX\r\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) Raspbian-([^\r\n]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) SolidFire Element \r\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) Trisquel_GNU/linux_([\d.]+)(?:-\d+)?\r\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) \+ILOM\.2015-5600\r\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) \.\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) in RemotelyAnywhere ([\d.]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+) miniBSD-([\d]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)-FIPS\(capable\)\r\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)-HipServ\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)-chrootssh\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)-sshjail\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)[ -]{1,2}Debian[ -_](.*ubuntu.*)\r\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)[ -]{1,2}Debian[ -_]([^\r\n]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)[ -]{1,2}Ubuntu[ -_]([^\r\n]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)[-_]hpn(\w+) *(?:\"\")?\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)\+CAN-2004-0175\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+)_Mikrotik_v([\d.]+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+-CERN\d+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+-hpn) NCSA_GSSAPI_\d+ KRB5\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+-hpn)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+-pwexp\d+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+\+sftpfilecontrol-v[\d.]+-hpn\w+)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+\.RL)\r?\n
+^SSH-([\d.]+)-OpenSSH_([\w._-]+\.cern-hpn)
+^SSH-([\d.]+)-OpenSSH_([\w_.-]+) FIPS\n
+^SSH-([\d.]+)-OpenSSH_([\w_.-]+) FIPS\r\n
+^SSH-([\d.]+)-OpenSSH_([\w_.-]+) NCSA_GSSAPI_GPT_([-\w_.]+) GSI\n
+^SSH-([\d.]+)-OpenSSH_3\.4\+p1\+gssapi\+OpenSSH_3\.7\.1buf_fix\+2006100301\r?\n
+^SSH-([\d.]+)-OpenSSH_[\w.]+-FC-([\w.-]+)\.fc(\d+)\r\n
+^SSH-([\d.]+)-PSFTPd PE\. Secure FTP Server ready\r?\n
+^SSH-([\d.]+)-PSFTPd\. Secure FTP Server ready\r\n
+^SSH-([\d.]+)-Plan9\r?\n
+^SSH-([\d.]+)-Pragma FortressSSH ([\d.]+)\n
+^SSH-([\d.]+)-ROSSSH\r\n
+^SSH-([\d.]+)-Radware_([\d.]+)\r?\n
+^SSH-([\d.]+)-RedlineNetworksSSH_([\d.]+) Derived_From_OpenSSH-([\d.])+\r?\n
+^SSH-([\d.]+)-ReflectionForSecureIT_([-\w_.]+) - Process Software MultiNet\r\n
+^SSH-([\d.]+)-ReflectionForSecureIT_([-\w_.]+)\r?\n
+^SSH-([\d.]+)-RomCliSecure_([\d.]+)\r?\n
+^SSH-([\d.]+)-RomSShell_([\w._-]+)\r\n
+^SSH-([\d.]+)-SC123/SC143 CHIP-RTOS V([\d.]+)\r\n
+^SSH-([\d.]+)-SERVER_([\d.]+)\r\n
+^SSH-([\d.]+)-SFTP Server\r\n
+^SSH-([\d.]+)-SSH Compatible Server\r?\n
+^SSH-([\d.]+)-SSH Server - ([^\r\n]+)\r\n\0\0...\x14
+^SSH-([\d.]+)-SSH Server - sshd\r\n
+^SSH-([\d.]+)-SSHD-CORE-([\w._-]+)-ATLASSIAN([\w._-]*)\r\n
+^SSH-([\d.]+)-SSHD-CORE-([\w._-]+)\r\n
+^SSH-([\d.]+)-SSHD-UNKNOWN\r\n
+^SSH-([\d.]+)-SSHD\r\n
+^SSH-([\d.]+)-SSHTroll
+^SSH-([\d.]+)-SSH\r\n
+^SSH-([\d.]+)-SSH_(\d[\d.]+)\r\n
+^SSH-([\d.]+)-SSH_0\.2\r?\n$
+^SSH-([\d.]+)-SSH_2\.0\n
+^SSH-([\d.]+)-SSH_v2\.0@force10networks\.com\r\n
+^SSH-([\d.]+)-SecureLink SSH Server \(Version ([\d.]+)\)\r\n
+^SSH-([\d.]+)-Serv-U_([\w._-]+)\r\n
+^SSH-([\d.]+)-SilverSHielD\r\n
+^SSH-([\d.]+)-Sun_SSH_(\S+)
+^SSH-([\d.]+)-Syncplify\.me\r\n
+^SSH-([\d.]+)-SysaxSSH_([\d.]+)\r\n
+^SSH-([\d.]+)-TECHNICOLOR_SW_([\d.]+)\n
+^SSH-([\d.]+)-Teleport (\d[\w._-]+)\n
+^SSH-([\d.]+)-Teleport\n
+^SSH-([\d.]+)-USHA SSHv([\w._-]+)\r?\n
+^SSH-([\d.]+)-VRP-([\d.]+)\r?\n
+^SSH-([\d.]+)-WRQReflectionForSecureIT_([\w._-]+) Build ([\w._-]+)\r\n
+^SSH-([\d.]+)-WRQReflectionforSecureIT_([\w._-]+) Build (\d+)\r\n
+^SSH-([\d.]+)-WS_FTP-SSH_([\w._-]+)(?: FIPS)?\r\n
+^SSH-([\d.]+)-WeOnlyDo(?:-wodFTPD)? ([\d.]+)\r?\n
+^SSH-([\d.]+)-WeOnlyDo-([\d.]+)\r?\n
+^SSH-([\d.]+)-WeOnlyDo-WingFTP\r\n
+^SSH-([\d.]+)-WingFTPserver\r\n
+^SSH-([\d.]+)-XFB\.Gateway ([UW]\w+)\n
+^SSH-([\d.]+)-XXXX\r\n
+^SSH-([\d.]+)-ZTE_SSH\.([\d.]+)\n
+^SSH-([\d.]+)-Zyxel SSH server\r?\n
+^SSH-([\d.]+)-cryptlib\r?\n
+^SSH-([\d.]+)-elastic-sshd\n
+^SSH-([\d.]+)-http://www\.sshtools\.com J2SSH \[SERVER\]\r\n
+^SSH-([\d.]+)-ipage FTP Server Ready\r\n
+^SSH-([\d.]+)-lancom\r?\n
+^SSH-([\d.]+)-libssh[_-]([-\w.]+)\r?\n
+^SSH-([\d.]+)-libssh\n
+^SSH-([\d.]+)-meow roototkt by rebel
+^SSH-([\d.]+)-mod_sftp/([\w._-]+)\r\n
+^SSH-([\d.]+)-mod_sftp\r\n
+^SSH-([\d.]+)-moxa_([\d.]+)\r\n
+^SSH-([\d.]+)-paramiko_([\w._-]+)\r?\n
+^SSH-([\d.]+)-srtSSHServer_([\w._-]+)\r\n
+^SSH-([\d.]+)-xlightftpd_release_([\w._-]+)\r\n
+^SSH-([\d.]+)-xxx\r\n
+^SSH-([\d.]+)-xxxxxxx\r?\n
+^SSH-([\d.]+)-
+^SSH-(\d[\d.]*)-(AKAMAI-I*)\r?\n$
+^SSH-(\d[\d.]*)-(Server-V)\r?\n$
+^SSH-(\d[\d.]*)-(Server-VI)\r?\n$
+^SSH-(\d[\d.]*)-(Server-VII)\r?\n
+^SSH-(\d[\d.]*)-AKAMAI-([\d.]+)\r?\n$
+^SSH-(\d[\d.]+)-Cisco-(\d[\d.]+)\r?\n$
+^SSH-(\d[\d.]+)-CiscoIOS_([\d.]+)XA\r?\n
+^SSH-(\d[\d.]+)-SSF-(\d[-.\w]+)\r?\n
+^SSH-(\d[\d.]+)-SSH Protocol Compatible Server SCS (\d[-.\w]+)\r?\n
+^SSH-(\d[\d.]+)-VShell_(\d[_\d.]+) VShell\r?\n$
+^SSH-(\d[\d.]+)-lshd-(\d[-.\w]+) lsh - a GNU ssh\r\n\0\0
+^SSH-(\d[\d.]+)-lshd_(\d[-.\w]+) lsh - a free ssh\r\n\0\0
+^SSH-1\.5-By-ICE_4_All \( Hackers Not Allowed! \)\r?\n
+^SSH-1\.5-FucKiT RootKit by Cyrax\r?\n
+^SSH-1\.5-SSH\.0\.1\r?\n
+^SSH-1\.5-X\r?\n
+^SSH-1\.99-InteropSecShell_([\d.]+)\r?\n
+^SSH-2\.0-(\d{8,12})\r?\n
+^SSH-2\.0-0\.0 \r?\n
+^SSH-2\.0-1\.0 Radware SSH \r?\n
+^SSH-2\.0-APSSH_([\w.]+)\r?\n
+^SSH-2\.0-CISCO_WLC\n
+^SSH-2\.0-FrSAR ([\d.]+) TRUEX COMPT 32/64\r?\n
+^SSH-2\.0-Mocana SSH ([\d.]+)\r?\n
+^SSH-2\.0-Mocana SSH \r?\n
+^SSH-2\.0-Mocana SSH\r\n
+^SSH-2\.0-OpenSSH\r?\n
+^SSH-2\.0-OpenSSH_3\.6p1\r?\n
+^SSH-2\.0-PGP\r?\n
+^SSH-2\.0-Server\r\n
+^SSH-2\.0-Twisted\r?\n
+^SSH-2\.0-Unknown\r?\n
+^SSH-2\.0-dropbear\r\n
+^SSH-2\.0-dropbear_([-\w.]+)\r?\n
+^SSH-2\.0-mpSSH_([\d.]+)\r?\n
+^\0\0\0\$\0\0\0\0\x01\0\0\0\x1bNo host key is configured!\n\r!\"v
+^\r\nDestination server does not have Ssh activated\.\r\nContact Cisco Systems, Inc to purchase a\r\nlicense key to activate Ssh\.\r\n
+^sshd2\[\d+\]: .*\r\nSSH-([\d.]+)-(\d[-.\w]+) SSH Secure Shell \(([^\r\n\)]+)\)\r?\n
+^sshd: SSH Secure Shell (\d[-.\w]+) \(([^\r\n\)]+)\) on ([-.\w]+)\nSSH-(\d[\d.]+)-
+^sshd: SSH Secure Shell (\d[-.\w]+) on ([-.\w]+)\nSSH-(\d[\d.]+)-
