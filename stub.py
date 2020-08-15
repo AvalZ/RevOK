@@ -3,11 +3,12 @@
 import socket
 import click
 import time
+import random
+import os
 
 from fuzzer.probabilistichttpfuzzer import prob_http_fuzzer
 from loguru import logger
 from xeger import Xeger
-
 
 
 @click.command()
@@ -16,7 +17,8 @@ from xeger import Xeger
 @click.option('--log-file', required=False, multiple=True)
 @click.option('--port', default=80)
 @click.option('--mode', type=click.Choice(['grammar', 'nmap']), default='grammar')
-def stub(template, substitutions, port, log_file, mode):
+@click.option('--protocol', default='http')
+def stub(template, substitutions, port, log_file, mode, protocol):
     """
     Run a stub that serves tracking responses.
     """
@@ -69,10 +71,17 @@ def stub(template, substitutions, port, log_file, mode):
     else:
         while True:
             if mode == 'grammar':
-                current_payload = prob_http_fuzzer()
+                if protocol == 'http':
+                    current_payload = prob_http_fuzzer()
+                else:
+                    raise Exception('Unsupported protocol')
             elif mode == 'nmap':
-                # TODO: choose portocol
-                regexes = open('protocols/{}'.format(protocol), 'r').readlines()
+                # choose portocol
+                protocol_file = 'protocols/{}'.format(protocol)
+                # exception if no file
+                if not os.path.isfile(protocol_file):
+                    raise Exception('Unsupported protocol')
+                regexes = open(protocol_file, 'r').readlines()
                 chosen_regex = random.choice(regexes)
 
                 x = Xeger()
