@@ -94,9 +94,9 @@ def stub(template, substitutions, port, log_file, mode, protocol):
                     chosen_regex = chosen_regex.replace(candidate, "(({})|({}))".format(candidate, UUID_REGEX))
 
                 x = Xeger()
-                current_payload = x.xeger(chosen_regex)
 
-            # Check if click catches the error
+
+                current_payload = x.xeger(chosen_regex)
 
             current_payload = bytes(current_payload, encoding='utf-8')
 
