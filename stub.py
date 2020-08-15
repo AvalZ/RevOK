@@ -5,11 +5,13 @@ import click
 import time
 import random
 import os
+import re
 
 from fuzzer.probabilistichttpfuzzer import prob_http_fuzzer
 from loguru import logger
 from xeger import Xeger
 
+UUID_REGEX = "[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}"
 
 @click.command()
 @click.argument('template', type=click.File('rb'), required=False)
@@ -83,6 +85,13 @@ def stub(template, substitutions, port, log_file, mode, protocol):
                     raise Exception('Unsupported protocol')
                 regexes = open(protocol_file, 'r').readlines()
                 chosen_regex = random.choice(regexes)
+
+                search = re.search('(\(.*?\))', chosen_regex)
+
+                if search:
+                    candidate = search.group(1)
+                    # add the possibility of injecting a UUID
+                    chosen_regex = chosen_regex.replace(candidate, "(({})|({}))".format(candidate, UUID_REGEX))
 
                 x = Xeger()
                 current_payload = x.xeger(chosen_regex)
