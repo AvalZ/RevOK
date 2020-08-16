@@ -86,6 +86,8 @@ def stub(template, substitutions, port, log_file, mode, protocol):
                 regexes = open(protocol_file, 'r').readlines()
                 chosen_regex = random.choice(regexes)
 
+                # FIXME: this way we only get the first occurrence
+                # TODO: replace all occurrences
                 search = re.search('(\(.*?\))', chosen_regex)
 
                 if search:
