@@ -4,7 +4,7 @@ Date: Wed, 15 Jan 2020 16:20:44 GMT
 Content-Type: text/html
 Content-Length: 162
 Connection: close
-Location: https://localhost:3790/
+Location: http://localhost:3000/asd?=$a
 
 <html>
 <head><title>301 Moved Permanently</title></head>

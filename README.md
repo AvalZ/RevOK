@@ -10,6 +10,26 @@ While the focus is on security scanners, RevOK can be used to test any software 
 RevOK helped us to find two [XSS to RCE bugs in Metasploit Pro](https://avalz.it/research/metasploit-pro-xss-to-rce/)[2] ([CVE-2020-7354](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-7354) and [CVE-2020-7355](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-7355)), as well as many other vulnerabilities.
 We described this technique in our paper "Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners" [3], accepted at [RAID 2020](https://raid2020.org/).
 
+## How to cite us
+
+If you want to cite us, please use the following (BibTeX) reference:
+
+```
+@inproceedings {valenza20revok,
+author = {Andrea Valenza and Gabriele Costa and Alessandro Armando},
+title = {Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners},
+booktitle = {23rd International Symposium on Research in Attacks, Intrusions and Defenses ({RAID} 2020)},
+year = {2020},
+isbn = {978-1-939133-18-2},
+address = {San Sebastian},
+pages = {17--29},
+url = {https://www.usenix.org/conference/raid2020/presentation/valenza},
+publisher = {{USENIX} Association},
+month = oct,
+}
+```
+
+
 ## Getting started
 
 The core of RevOK is the **stub** component.
@@ -125,5 +145,5 @@ However, when one of ConSec's scanners demonstrates his powers at a marketing ev
 
 1. [Attacking the attackers](https://avalz.it/research/metasploit-pro-xss-to-rce/)
 2. [Metasploit Pro Release Notes for CVE-2020-7354 and CVE-2020-7355](https://help.rapid7.com/metasploit/release-notes/archive/2020/05/#20200514)
-3. [Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners](http://arxiv.org/abs/2006.09769) (preprint)
+3. [Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners](https://www.researchgate.net/publication/344642774_Never_Trust_Your_Victim_Weaponizing_Vulnerabilities_in_Security_Scanners)
 4. [Scanners (1981)](https://www.imdb.com/title/tt0081455/)
