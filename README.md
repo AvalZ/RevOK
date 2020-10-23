@@ -12,6 +12,8 @@ We described this technique in our paper "Never Trust Your Victim: Weaponizing V
 
 ## How to cite us
 
+RevOK implements the automatic testing methodology presented in "Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners" [3].
+
 If you want to cite us, please use the following (BibTeX) reference:
 
 ```
@@ -130,6 +132,10 @@ Options:
     --help                  Show this message and exit.
 ```
 
+## Vulnerable Targets
+
+To let you try RevOK against a realistic target, we built [DVAS](https://github.com/AvalZ/DVAS), a *Damn Vulnerable Application Scanner*.
+
 ## Why RevOK?
 
 In short, RevOK makes scanners explode.
@@ -145,5 +151,5 @@ However, when one of ConSec's scanners demonstrates his powers at a marketing ev
 
 1. [Attacking the attackers](https://avalz.it/research/metasploit-pro-xss-to-rce/)
 2. [Metasploit Pro Release Notes for CVE-2020-7354 and CVE-2020-7355](https://help.rapid7.com/metasploit/release-notes/archive/2020/05/#20200514)
-3. [Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners](https://www.researchgate.net/publication/344642774_Never_Trust_Your_Victim_Weaponizing_Vulnerabilities_in_Security_Scanners)
+3. [A. Valenza, G. Costa, A. Armando. "Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners"](https://www.researchgate.net/publication/344642774_Never_Trust_Your_Victim_Weaponizing_Vulnerabilities_in_Security_Scanners)
 4. [Scanners (1981)](https://www.imdb.com/title/tt0081455/)
