@@ -12,7 +12,7 @@ We described this technique in our paper ["Never Trust Your Victim: Weaponizing 
 
 ## How to cite us
 
-RevOK implements the automatic testing methodology presented in "Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners" [3].
+RevOK implements the automatic testing methodology presented in ["Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners"](https://www.researchgate.net/publication/344642774_Never_Trust_Your_Victim_Weaponizing_Vulnerabilities_in_Security_Scanners).
 
 If you want to cite us, please use the following (BibTeX) reference:
 
