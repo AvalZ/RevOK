@@ -8,7 +8,7 @@ Testing these bugs is often hard since they require a dedicated testing infrastr
 While the focus is on security scanners, RevOK can be used to test any software that takes (attacker-controlled) third-party data and displays it to a user (e.g., server-side REST API calls).
 
 RevOK helped us to find two [XSS to RCE bugs in Metasploit Pro](https://avalz.it/research/metasploit-pro-xss-to-rce/)[2] ([CVE-2020-7354](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-7354) and [CVE-2020-7355](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-7355)), as well as many other vulnerabilities.
-We described this technique in our paper "Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners" [3], accepted at [RAID 2020](https://raid2020.org/).
+We described this technique in our paper ["Never Trust Your Victim: Weaponizing Vulnerabilities in Security Scanners"](https://www.researchgate.net/publication/344642774_Never_Trust_Your_Victim_Weaponizing_Vulnerabilities_in_Security_Scanners), accepted at [RAID 2020](https://raid2020.org/).
 
 ## How to cite us
 
