@@ -35,7 +35,7 @@ def stub(template, substitutions, port, log_file):
     logger.add('packets-{}.log'.format(TIMESTAMP), filter=packet_filter, format=packet_log_format)
     for l in log_file:
         logger.add(l, filter=packet_filter, format=packet_log_format)
-    logger.success("Socker listening on port {}", port)
+    logger.success("Socket listening on port {}", port)
 
     if template and substitutions:
         substitutions = [s.rstrip() for s in substitutions.readlines()]
